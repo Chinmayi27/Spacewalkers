@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+<link rel="stylesheet" type="text/css" href="tictac.js"/>
+<style>
+div.bg{
+	height:770px;
+	width:50%;
+	position: relative;
+	left:350px;
+}
+#Blurr{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url('Cover.jpg');
+	z-index: -1;
+	filter:blur(5px);
+}
+
+div.Top{
+	position-top:500px;
+	position: relative;
+	top:100px;
+
+}
+
+h1{
+	font-size: 500%;
+	background: -webkit-linear-gradient(#FF6600 ,#880000 );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	top:30px;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+h2 {
+
+	margin-top: 4em;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	font-size: 205%;
+}
+
+h3 {
+	margin-top: 3em;
+	text-align: center;
+	position: relative;
+	font-size: 200%;
+
+}
+
+
+
+h2 a, h3 a{
+	text-decoration: none;
+	color: rgb(210,180,12);
+	font-family: sans-serif;
+	-webkit-transition: font-size;
+	transition: font-size 0.3s;
+	-webkit-transition: color;
+	transition: color 0.6s;
+
+}
+
+.h2:hover{
+	font-size: 120%;
+	color: white;
+
+}
+
+.h3 a:hover{
+	font-size: 120%;
+	color: white;
+
+}
+
+.single, .multi {
+font-family: sans-serif;
+font-size: 60%;
+visibility: hidden;
+color: white;
+opacity: 0;
+-webkit-transition: opacity 0.2s;
+transition: opacity 1.5s;
+transition: all 0.5s ease;
+
+
+}
+
+
+
+.singlewrap{
+	display: inline;
+}
+
+.multiwrap{
+	display: inline;
+
+}
+.singlewrap h2:hover .single{
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 1.5s;
+	
+}
+
+.multiwrap h3:hover .multi{
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 1.5s;
+	
+}
+div.terms{
+    display:block;
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    font-size: 120%;
+    font-family: sans-serif;
+}
+
+div.terms a{
+	text-decoration: none;
+	color: white;
+
+}
+
+div.terms a:hover{
+	color:blue;
+
+}
+</style>
+</head>
+
+<body>
+
+<script src="tictac.js"></script>
+
+<div class="bg">
+<div class="Top">
+	<div id="Blurr"></div>
+	<h1 id= "h1"> Tic Tac Toe</h1>
+
+	<div class="singlewrap">
+	<h2> <a class="h2" href="tictacs.html"> Single-player </a> 
+	</div>
+
+	<div class="multiwrap">
+	<h3 class="h3"> <a href="tictacm.html"> Multi-player </a> </h3>
+
+	 <p class="multi"> Play against your friend, and see who comes out victorious!</p>
+
+	</div>
+</div>
+</div>
+</body>
+</html>

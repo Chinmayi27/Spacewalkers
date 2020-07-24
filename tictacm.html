@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src = "scripts/tictac.js"></script>
+<style>
+	body{
+	background-image: url('bg.jpeg');
+
+	}
+#h1{
+	font-size:380%;
+	background: -webkit-linear-gradient(#FF6600 ,#880000 );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+	vertical-align: middle;
+	margin-left:0px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+.h2{
+	color:white;
+	margin-top:0px;
+	padding-right: 10px;
+	text-decoration: none;
+	background-color: #006633;
+	border-radius: 20px;
+	font-size: 20px;
+	padding:10px 20px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+table,td,th
+{
+	width: 140px;
+	height: 100px;
+	border:1px solid white;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin-left: 530px;
+	margin-top: 50px;
+	margin:0 auto;
+	border-collapse: collapse;
+}
+table
+{
+width:30%;
+}
+td 
+{	
+	color: red;
+	height: 120px;
+	font-family:Verdana;
+	font-size: 300%;
+	text-align: center;
+}
+
+h1{
+
+	text-align: center;
+	vertical-align: middle;
+	color: red;
+	position: relative;
+	font-size: 200%;
+}
+button{
+	margin-left: 660px;
+	margin-top: 50px;
+	font-size: 150%;
+	font-family:Lucida;
+	background-color: #006633;
+	border-radius: 18px;
+	color:white;
+	padding:10px;
+	
+}
+
+div.terms{
+    display:block;
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    font-size: 120%;
+    font-family: sans-serif;
+}
+
+div.terms a{
+	text-decoration: none;
+	color: white;
+
+}
+
+div.terms a:hover{
+	color:blue;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<script src="tictac.js"></script>
+
+
+<h1 id= "h1"> Multi-player</h1>
+<h2> <a class="h2" href="Game.html">Back</a> 
+
+<table>
+<tr>
+<td id="square1" style= "width: 50px" onclick="clicker('square1')"></td>
+<td id="square2" style= "width: 50px"onclick="clicker('square2')"></td>
+<td id="square3" style= "width: 50px"onclick="clicker('square3')"></td>
+</tr>
+<tr>
+<td id="square4"style= "width: 50px" onclick="clicker('square4')"></td>
+<td id="square5" style= "width: 50px"onclick="clicker('square5')"></td>
+<td id="square6" style= "width: 50px"onclick="clicker('square6')"></td>
+</tr>
+<tr>
+<td id="square7"style= "width: 50px" onclick="clicker('square7')"></td>
+<td id="square8" style= "width: 50px"onclick="clicker('square8')"></td>
+<td id="square9" style= "width: 50px"onclick="clicker('square9')"></td>
+</tr>
+</table>
+
+<button id="button" onclick="restart()">Reset!</button>
+
+
+</body>
+</html>
